@@ -33,10 +33,10 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
+          <h1>Jonathan Shelley</h1>
           <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
-          <ul class="position-right">
+          <h3>Lancaster, USA</h3>
+          <ul class="position-left">
             <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
@@ -54,21 +54,23 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://scontent.fagc1-1.fna.fbcdn.net/v/t1.6435-9/93661476_10156722391091986_7611109183009587200_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=MP9O0WczfZsAX9e0LDr&_nc_ht=scontent.fagc1-1.fna&oh=00_AfBQvrYaSJi9FkTbPedIXFZ80BnPUWhwapaRjI5vuceWzA&oe=644479EC",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://scontent.fagc1-1.fna.fbcdn.net/v/t39.30808-6/335027392_3465688460356714_4530752569177751542_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6DGfVts3oxkAX8YcHp-&_nc_ht=scontent.fagc1-1.fna&oh=00_AfAa_Jp-bsjJzUJlYfmoOSmW4qp7HA1v9Uq8reFiCYfAeQ&oe=64225A18",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
-    name: null,
-    lastname: null,
-    role: null,
-    country: null,
-    city: null
+    name: "Jon",
+    lastname: "Shelley",
+    role: "technologist",
+    country: "US",
+    city: "Lancaster"
   };
   render(window.variables); //render the card for the first time
 
